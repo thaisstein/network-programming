@@ -159,7 +159,7 @@ if __name__ == "__main__":
         packet_types = identify_packet_types(pcap_file)
         echo_req, echo_rep, lost, loss_pct = calculate_icmp_packet_loss(pcap_file)
 
-        # Print results for each metric
+        # Print results for metrics
         print("Total packets:", total_packets)
         print("Total ICMP packets:", icmp_packets)
         print("Unique source IPs:", src_ips)
